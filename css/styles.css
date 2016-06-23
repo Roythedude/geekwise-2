@@ -1,5 +1,7 @@
 /*GLOBAL STYLES*/
 
+@import url(https://fonts.googleapis.com/css?family=Francois+One|Economica);
+
 html, body {
     height:100%;
 }
@@ -17,7 +19,8 @@ body {
 h1, h2, h3 {
     margin:0px;
     padding:0px;
-    color:#FFD700;
+    color:#340043;
+    font-family: 'Francois One', sans-serif;
 }
 
 h1 {
@@ -27,32 +30,36 @@ h1 {
 
 
 p {
-    color:#A6A6A6;
+    color:#000000;
     margin:15px 0px;
     line-height:18px;
+    font-family: 'Economica', sans-serif;
 }
 
 a{
-    color:#800080;
+    color:#340043;
     text-decoration:none;
 }
 
 a:hover{
-    color:#AEAEAE;
+    color:#ffd700;
 }
 
 figure {
-    padding:25px;
-    background-color:#A6A6A6;
+    padding:20px 10px;
+    background-color:#ffd700;
     display:inline-block;
     border-radius:10px;
+    margin:20px 0px;
+    font-family: 'Francois One', sans-serif;
+    text-align:center;
     /*box-shadow:6px 6px 6px #000000;*/
 }
 
 fig-caption {
     text-align:center;
     font-size:1.25em;
-    color:#000000;
+    color:#340043;
     
 }
 
@@ -61,22 +68,30 @@ main {
     overflow:hidden;
     margin:20px auto;
 }
+
+b, strong {
+     color:#340043;
+}
+mark {
+    padding:0px;
+}
+
  /*============HEADER STYLES* ================*/
  
  
  header {
-     height:100px;
-     background:#f4f4f4;
+     height:80px;
+     background:#CD00CD;
  }
  
  #logo {
-     color:#AEAEAE;
+     color:#ffd700;
      position:relative;
      top:20px;
      left:20px;
  }
  #logo:hover {
-     color:#ff0000;
+     color:#340043;
  }     
      
 /*=============== BANNER STYLES ===================*/
@@ -84,9 +99,9 @@ main {
 #banner {
     overflow:hidden;
     padding:175px 0px;
-    border-top:6px solid #F4F4F4;
+    border-top:6px solid #000000;
     background-color:#800080;
-    background: url(../images/banner-home.jpg) no-repeat center center #ff0000;
+    background: url(../images/banner-home.jpg) no-repeat center center #CD00CD;
     background-size:cover;
 }
 
@@ -95,6 +110,11 @@ main {
     font-size:6em;
     text-align:center;
     text-shadow: 6px 6px 6px #000000;
+}
+
+#banner a {
+    position:relative;
+    left:45%;
 }
 
 /*===========================NAVIGATION STYLES======================*/
@@ -107,12 +127,15 @@ main {
 
 #menu ul li {
     /*display:inline-block;*/
-    display:inline;
+    display:inline-block;
     margin:0px 20px;
+    /*padding:20px 20px 0px 20px;*/
+    /*background-color:;*/
+    font-family: 'Francois One', sans-serif;
 }
      
 .currentPage {
-    color:#A6A6A6;
+    color:#FFD700;
 }    
      
 /*==================== THREE COLUM STYLES ================================= */
@@ -129,50 +152,228 @@ main {
      
 .column3 {
     float:left;
-    /*border:solid;1px #000000*/
+    /*border:solid 1px #000000*/
 } 
 .column1 h2, .column2 h2, .column3 h2 {
     font-size:3.5em;
     font-weight:700;
     text-align:center;
     margin:15px 0px;
-    display:inline-block;
+    display:block;
     /*?????????*/
 }
      
 .column1 p, .column2 p, .column3 p {
     padding:0px;
-    text-align: justify;
+    text-align:justify;
 }  
      
 .column1 span, .column2 span, .column3 span {
-    background-color:#FF7900;
-    color:#FFFFFF;
+    background-color:#000000;
+    color:#b39700;
     display:block;
     font-size:1.75em;
     font-weight:600;
     text-align:center;
     padding:15px 0px;
-    
+    font-family: 'Francois One', sans-serif;
 }
-/*============BUTTON=========   */
+
+.banner {
+    background-color:#340043;
+    padding:5px;
+    text-align:center;
+    color:#ffd700;
+    border-radius:10px;
+}
+/*============BUTTON STYLES=========== */
 
 .button {
-      background-color:#b3b3b3;
+      background-color:#ffd700;
       border-radius:8px;
       padding:30px 30px;
       text-decoration:none;
-      color:#fff;
+      color:#800080;
       display:inline-block;
       font-weight:900;
       text-align:center;
+      margin:0px 119px;font-family: 'Economica', sans-serif;
 }
 
 .button:hover {
-      background-color:#000;
+      background-color:#340043;
 }
 
+
+#click {
+      background-color:#340043;
+      border-radius:8px;
+      padding:30px 30px;
+      text-decoration:none;
+      color:#ffd700;
+      display:inline-block;
+      font-weight:900;
+      text-align:center;
+      font-family: 'Economica', sans-serif;
+}
+#click:hover {
+    background-color:#ffd700;
+    color:#340043;
+}
+
+.anotherButton {
+      background-color:#340043;
+      border-radius:8px;
+      padding:30px 30px;
+      margin:0px 275px;
+      text-decoration:none;
+      color:#ffd700;
+      display:inline-block;
+      font-weight:900;
+      text-align:center;
+      font-family: 'Economica', sans-serif;
+}
+.anotherButton:hover {
+    background-color:#ffd700;
+    color:#340043;
+}
+/*============ABOUT ME SECTION============*/
+    
+.asideLeft {
+    float:left;
+    width:384px;
+    margin-right:24px;
+}
+
+.asideRight {
+    float:right;
+    width:384px;
+    margin-left:24px;
+}
+.aboutMe {
+    padding:20px 0px;
+    float:right;
+    width:735px;
+}
+
+
+.aboutMe p {
+    text-align:justify;
+}
+
+.blogPost {
+    display:inline-block;
+    margin:25px 0px;
+}
+
+/*=========FOOTER STYLES========*/
+
+footer {
+    /*height:200px;*/
+    padding:30px 20px;
+    margin:20px 0px 0px 0px;
+    border-top:solid 4px #000000;
+    text-align:center;
+    background-color:#CD00CD;
+}
+footer p {
+    color:#ffd700;
+}
+      
      
-     
-     
- 
+/*=========SOCIAL STYLES==========*/
+
+.social a {
+    color:#ffffff;
+}
+
+.fa {
+    background:rgb(131, 131, 131);
+    border:solid 3px #ffffff;
+    font-size:2em !important;
+    border-radius:100%;
+    width:28px;
+    height:28px;
+    padding:12px;
+    margin:0px 15px;
+}
+
+.fa-facebook {
+    background-color:#3b5998;
+}
+
+.fa-facebook:hover {
+    background-color:#340043;
+}
+
+.fa-twitter {
+    background-color:#00aced;
+}
+
+.fa-twitter:hover {
+    background-color:#340043;
+}
+
+.fa-instagram {
+    background-color:#517fa4;
+}
+
+.fa-instagram:hover {
+    background-color:#340043;
+}
+
+.fa-linkedin {
+    background-color:#007bb6;
+}
+
+.fa-linkedin:hover {
+    background-color:#340043;
+}
+
+.fa-github {
+    background-color:#000000;
+}
+
+.fa-github:hover {
+    background-color:#340043;
+}
+
+
+/*=============misc styles============*/
+
+#video {
+    position:relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height:0px;
+    overflow:hidden;
+}
+
+#video iframe, #video embed {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+}
+
+.maps {
+    /*display:block;*/
+    /*margin:auto;*/
+    
+/*======BOTH WORK======*/
+    
+    display:block;
+    width:90%;
+    margin:0px auto;
+}
+
+#wufoo-z1pvzh4c0rj3vub {
+    width:90%;
+    margin:10px auto;
+    display:block;
+    border:solid 3px #340043;
+    border-radius: 8px;
+    padding:20px;
+    background-color:#ffd700;
+}
